@@ -1,0 +1,65 @@
+#naglowek {
+    background-color: gray;
+}
+
+nav {
+    background-color: red;
+}
+ 
+.glowna {
+    background-color: green;
+}
+
+.prawa {
+    background-color: yellow;
+}
+
+footer {
+    background-color: pink;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html, body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    width: 33%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: pink;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+section {
+    background-color: aquamarine;
+}
+
+.card .card-header {
+  background-color: blueviolet;
+}
+
+.card-body {
+    background-color: coral;    
+}
