@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>js03</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	</head>
+	<body>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <button type="submit" id="oblicz">Oblicz</button>
+        <br>
+        <output id="dodawanie"></output>
+        <br>
+        <output id="odejmowanie"></output>
+        <br>
+        <output id="mnozenie"></output>
+        <br>
+        <output id="dzielenie"></output>
+	</body>
+    <script>
+        $("#oblicz").click(function(){
+            var n1 = parseInt($("#n1").val());
+            var n2 = parseInt($("#n2").val());
+            
+            $("#dodawanie").text(n1 + n2 + " Dodawanie");
+            $("#odejmowanie").text(n1 - n2 + " Odejmowanie");
+            $("#mnozenie").text(n1 * n2 + " Mnożenie");
+            
+            if(n2 == 0){
+                $("#dzielenie").text("Dzielenie przez 0");
+            }
+            else{
+                $("#dzielenie").text(n1 / n2 + " Dzielenie");
+            }
+            
+         });
+    </script>
+</html>
